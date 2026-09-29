@@ -3,20 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rlobun <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: rlobun <rlobun@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 11:52:44 by rlobun            #+#    #+#             */
-/*   Updated: 2026/09/15 13:32:18 by rlobun           ###   ########.fr       */
+/*   Updated: 2026/09/29 17:02:18 by rlobun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "vect2.hpp"
 #include <iostream>
 
-// The main() provided by the subject (README.md). The grader compiles a main
-// like this together with vect2.cpp + vect2.hpp, so vect2.cpp must NOT define
-// its own main(). Build the demo with:
-//   c++ -Wall -Wextra -Werror -std=c++98 vect2.cpp subject_main.cpp -o vect2
 
 # if 0
 int main()
