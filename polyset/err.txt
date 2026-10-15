@@ -1,0 +1,108 @@
+In file included from set.cpp:13:
+./set.hpp:23:7: error: unknown type name 'searchabl_bag'; did you mean 'searchable_bag'?
+                set(searchabl_bag& b) : bag(b) {};
+                    ^~~~~~~~~~~~~
+                    searchable_bag
+./searchable_bag.hpp:18:7: note: 'searchable_bag' declared here
+class searchable_bag: virtual public bag
+      ^
+In file included from set.cpp:13:
+./set.hpp:34:34: error: expected ')'
+                void insert(int* arr, int size {for(int i = 0; i < size; ++i;}
+                                               ^
+./set.hpp:34:14: note: to match this '('
+                void insert(int* arr, int size {for(int i = 0; i < size; ++i;}
+                           ^
+./set.hpp:38:41: error: expected ';' at end of declaration list
+                searchable_bag& get_bag() {return bag} 
+                                                      ^
+                                                      ;
+./set.hpp:27:13: error: invalid operands to binary expression ('set *' and 'const set')
+                        if (this != o)
+                            ~~~~ ^  ~
+./set.hpp:33:30: error: expected '(' after 'if'
+                void insert(int value) {if !(bag.has(value)) bag.insert(value);}
+                                           ^
+./set.hpp:33:19: error: unused parameter 'value' [-Werror,-Wunused-parameter]
+                void insert(int value) {if !(bag.has(value)) bag.insert(value);}
+                                ^
+6 errors generated.
+In file included from searchable_tree_bag.cpp:1:
+./searchable_tree_bag.hpp:45:3: error: non-void function does not return a value in all control paths [-Werror,-Wreturn-type]
+                }
+                ^
+./searchable_tree_bag.hpp:46:2: error: expected ';' after class
+}
+ ^
+ ;
+2 errors generated.
+In file included from main.cpp:1:
+./searchable_tree_bag.hpp:45:3: error: non-void function does not return a value in all control paths [-Werror,-Wreturn-type]
+                }
+                ^
+./searchable_tree_bag.hpp:46:2: error: expected ';' after class
+}
+ ^
+ ;
+In file included from main.cpp:5:
+./set.hpp:23:7: error: unknown type name 'searchabl_bag'; did you mean 'searchable_bag'?
+                set(searchabl_bag& b) : bag(b) {};
+                    ^~~~~~~~~~~~~
+                    searchable_bag
+./searchable_bag.hpp:18:7: note: 'searchable_bag' declared here
+class searchable_bag: virtual public bag
+      ^
+In file included from main.cpp:5:
+./set.hpp:34:34: error: expected ')'
+                void insert(int* arr, int size {for(int i = 0; i < size; ++i;}
+                                               ^
+./set.hpp:34:14: note: to match this '('
+                void insert(int* arr, int size {for(int i = 0; i < size; ++i;}
+                           ^
+./set.hpp:38:41: error: expected ';' at end of declaration list
+                searchable_bag& get_bag() {return bag} 
+                                                      ^
+                                                      ;
+./set.hpp:27:13: error: invalid operands to binary expression ('set *' and 'const set')
+                        if (this != o)
+                            ~~~~ ^  ~
+./set.hpp:33:30: error: expected '(' after 'if'
+                void insert(int value) {if !(bag.has(value)) bag.insert(value);}
+                                           ^
+./set.hpp:33:19: error: unused parameter 'value' [-Werror,-Wunused-parameter]
+                void insert(int value) {if !(bag.has(value)) bag.insert(value);}
+                                ^
+main.cpp:12:26: error: unknown type name 'searchable_array_bag'; did you mean 'searchable_tree_bag'?
+        searchable_bag *a = new searchable_array_bag;
+                                ^~~~~~~~~~~~~~~~~~~~
+                                searchable_tree_bag
+./searchable_tree_bag.hpp:19:7: note: 'searchable_tree_bag' declared here
+class searchable_tree_bag: public tree_bag, public searchable_bag
+      ^
+main.cpp:29:8: error: unknown type name 'searchable_array_bag'; did you mean 'searchable_tree_bag'?
+        const searchable_array_bag tmp(static_cast<searchable_array_bag &>(*a));
+              ^~~~~~~~~~~~~~~~~~~~
+              searchable_tree_bag
+./searchable_tree_bag.hpp:19:7: note: 'searchable_tree_bag' declared here
+class searchable_tree_bag: public tree_bag, public searchable_bag
+      ^
+main.cpp:29:45: error: unknown type name 'searchable_array_bag'; did you mean 'searchable_tree_bag'?
+        const searchable_array_bag tmp(static_cast<searchable_array_bag &>(*a));
+                                                   ^~~~~~~~~~~~~~~~~~~~
+                                                   searchable_tree_bag
+./searchable_tree_bag.hpp:19:7: note: 'searchable_tree_bag' declared here
+class searchable_tree_bag: public tree_bag, public searchable_bag
+      ^
+main.cpp:40:5: error: no member named 'print' in 'set'
+        sa.print();
+        ~~ ^
+main.cpp:41:5: error: no member named 'get_bag' in 'set'
+        sa.get_bag().print();
+        ~~ ^
+main.cpp:42:5: error: no member named 'print' in 'set'
+        st.print();
+        ~~ ^
+main.cpp:43:5: error: no member named 'clear' in 'set'
+        sa.clear();
+        ~~ ^
+15 errors generated.
